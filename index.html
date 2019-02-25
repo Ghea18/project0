@@ -3,8 +3,12 @@
 <head>
 	<html lang="en">
 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="description" content="">
+    <meta name="author" content="">
 	<title>Web Ghea Chandra S</title>
+    <link rel="icon" href="../../favicon.ico">
 	<style type="text/css">
 		body {
 			background-color: #fff;
@@ -29,23 +33,20 @@
 			font-weight: normal;
 		}
 		header {
-			margin: 10px;
 			padding: 15px;
-			padding-top: 35pt;
-			border: 1px solid #D0D0D0;
+			padding-top: 55pt;
 			box-shadow: 0 0 8px #D0D0D0;
 			color: white;
-			background-color: #09a0ee;; 
+			background-color: #75009c; 
 		}
-		header h4 {
-			padding: 0px 15px 0px 15px;
+		body h4{
+			padding: 0px;
 		}
-		#begin {
-			margin: 10px;
-			border: 1px solid #D0D0D0;
-			box-shadow: 0 0 8px #D0D0D0;
+		header h4{
+			padding-right: 15px;
+			padding-left: 15px;
 		}
-		#container {
+		#begin,	#container {
 			margin: 10px;
 			border: 1px solid #D0D0D0;
 			box-shadow: 0 0 8px #D0D0D0;
@@ -53,12 +54,13 @@
 		.isi {
 			margin: 15px;
 		}
-		li:hover {
+		li a:hover {
 			color: #FFF;
 			background-color: black;
+			text-decoration: none
 		}
 		.card {
-			margin: 15px;
+			padding: 15px;
 		}
 		footer {
 			margin: 10px;
@@ -76,56 +78,79 @@
             }
         }
         @media print {
-
-		}
+        	nav {
+        		display: none;
+        	}
+        	footer {
+        		display: none;
+        	}
+        }
 	</style>
+	<!-- Bootstrap core CSS     -->
+    <link href="assets/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HTML PAGE</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     <header>
-      <h1>Document HTML Saya</h1>
-      <h4>Sebuah Document yang dibuat sebagai latihan pembuatan WEB Page &copy;</h4>
+      <h1>Project 0 (ZERO)</h1>
+      <h4>Sebuah Document HTML yang dibuat sebagai latihan pembuatan WEB Page &copy;</h4>
     </header>
 	<div id="begin">
-		<h3>Pemrograman WEB</h1>
+		<h1>Pemrograman WEB</h1>
 		<div class="isi">
 			<dl>
-				<dt>Nama mahasiswa yang mengambil mata kuliah pemrograman web:</dt>
-				<dd>
-					<ul>
-						<li>Ghea Chandra S</li>
-						<li>Dimas Bagaskara</li>
-						<li>Nani Masrifah</li>
-						<li>Titi Sumarni</li>
-						<li>Ramdhan Mala</li>
-					</ul>
-				</dd>
+				<dt>Nama mahasiswa yang mengambil kuliah:</dt>
+				<dd><ul>
+					<li><a>Ghea Chandra S</a></li>
+					<li><a>Dimas Bagaskara</a></li>
+					<li><a>Nani Masrifah</a></li>
+					<li><a>Titi Sumarni</a></li>
+					<li><a>Ramdhan Mala</a></li>
+				</ul></dd>
 			</dl>
 		</div>
 	</div>
 	<div id="container">
 		<div class="row">
-        	<div class="col-md-8 card">
-				<p>
-					Pemrograman WEB menggunakan platform Edx sebagai media belajar, didalamnya berisikan 11 session yang mebahas berbagai pengetahuan dasar dalam membangun halam web. Materi yang dipelajari diantaranya adalah menengai Git, HTML, CSS, SCSS, Python, Flask, dan JavaScript.
-				</p>
-        		<p> lo
-        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        		</p>
+        	<div class="col-md-7">
+        		<div class="card">
+	        		<h4>Materi Pemrograman</h4>
+					<p>
+						Pemrograman WEB menggunakan platform Edx sebagai media belajar, didalamnya berisikan 11 session yang mebahas berbagai pengetahuan dasar dalam membangun halam web. Materi yang dipelajari diantaranya adalah menengai Git, HTML, CSS, SCSS, Python, Flask, dan JavaScript.
+					</p>
+				</div>
         	</div>
-        	<div class="col-md-3 card">
-				<p>
-					Terdapat beberapa project yang dapat dilakukan pada pemrograman WEB, diantaranya:
-				</p>
-				<ol>
-					<li>Project 0, Project ini melatih penggunaan HTML dan CSS untuk mendesign halaman web dan untuk belajar menggunkan SCSS untuk menulis stylesheets yang lebih kompleks.</li>
-					<li>Project 1, Tujuan Project ini untuk melatih penggunan python dan memperoleh pengalaman menggunakan flask serta belajar penggunaan SQL untuk berinteraksi dengan database.</li>
-					<li>Project 2, Pada project ini diperlukan untuk membangun tampilan halaman web serta belajar menggunakan JavaScript yang berjalan di server-side.</li>
-				</ol>
+        	<div class="col-md-5">
+        		<div class="card">
+	        		<h4>Project Pemrograman</h4>
+					<p>
+						Terdapat beberapa project yang dapat dilakukan pada pemrograman WEB, diantaranya:
+					</p>
+					<ol>
+						<li>Project 0, Project ini melatih penggunaan HTML dan CSS untuk mendesign halaman web dan untuk belajar menggunkan SCSS untuk menulis stylesheets yang lebih kompleks.</li>
+						<li>Project 1, Tujuan Project ini untuk melatih penggunan python dan memperoleh pengalaman menggunakan flask serta belajar penggunaan SQL untuk berinteraksi dengan database.</li>
+						<li>Project 2, Pada project ini diperlukan untuk membangun tampilan halaman web serta belajar menggunakan JavaScript yang berjalan di server-side.</li>
+					</ol>
+				</div>
         	</div>
         </div>
     </div>
@@ -133,4 +158,6 @@
     	<a>Copyright &copy; 2019 Ghea Chandra S</a>
     </footer>
 </body>
+	<script src="assets/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/bootstrap.min.js" type="text/javascript"></script>
 </html>
